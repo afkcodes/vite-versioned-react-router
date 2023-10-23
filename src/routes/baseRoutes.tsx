@@ -3,6 +3,7 @@ import App from "../App";
 import About from "../pages/About";
 import Contact from "../pages/Contact";
 import Error from "../pages/Error";
+import Home from "../pages/Home";
 
 const baseRoutes: RouteObject[] = [
   {
@@ -10,6 +11,11 @@ const baseRoutes: RouteObject[] = [
     element: <App />,
     errorElement: <Error />,
     children: [
+      {
+        path: "",
+        element: <Home />,
+        errorElement: <Error />,
+      },
       {
         path: "/contact-us",
         element: <Contact />,
