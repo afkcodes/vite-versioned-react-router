@@ -3,7 +3,7 @@ import { contactBgColor } from "../colors";
 const Contact = () => {
   return (
     <div
-      className={`bg-[${contactBgColor}] text-white text-2xl h-full w-full flex justify-center items-center`}
+      className={`${contactBgColor} text-white text-2xl h-full w-full flex justify-center items-center`}
     >
       This is Contact page
     </div>
