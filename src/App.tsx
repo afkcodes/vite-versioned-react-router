@@ -1,8 +1,9 @@
 import { Link, Outlet } from "react-router-dom";
+import { homeBgColor } from "./colors";
 
 function App() {
   return (
-    <div className="h-screen bg-black text-white">
+    <div className="h-screen ${homeBgColor} text-white">
       <nav className="w-full bg-gray-900 py-2">
         <ul className="flex gap-8 font-semibold text-lg justify-end px-12">
           <li className="hover:text-red-500 cursor-pointer">
